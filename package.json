@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "htm": "^2.1.1",
+    "preact": "^10.0.0-beta.2"
+  },
+  "devDependencies": {
+    "rollup": "^1.15.4",
+    "rollup-plugin-node-resolve": "^5.0.2",
+    "rollup-plugin-terser": "^5.0.0"
+  },
+  "name": "preact-hook-htm",
+  "version": "0.1.0-beta",
+  "main": "dist/preact-hook-htm.cjs.js",
+  "module": "dist/preact-hook-htm.esm.js",
+  "repository": "https://github.com/lukekaalim/preact-hook-htm.git",
+  "author": "Luke Kaalim <lukekaalim@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
