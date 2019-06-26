@@ -1,5 +1,5 @@
 import { render, createElement } from 'preact';
-import { useState, useEffect } from 'preact/hooks';
+import { useState, useEffect, useReducer, useRef } from 'preact/hooks';
 import htm from 'htm';
 
 const html = htm.bind(createElement);
@@ -9,4 +9,6 @@ export {
   render,
   useState,
   useEffect,
+  useReducer,
+  useRef,
 };

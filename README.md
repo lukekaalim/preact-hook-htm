@@ -12,9 +12,9 @@ export { render };
 
 ### Hooks
 ```javascript
-export { useState, useEffect };
+export { useState, useEffect, useRef, useReducer };
 ```
-`useState()` and `useEffect()` are from `preact/hooks`
+`useState()`, `useRef()`, `useReducer` and `useEffect()` are from `preact/hooks`
 
 ### Htm
 ```javascript
