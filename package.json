@@ -9,7 +9,7 @@
     "rollup-plugin-terser": "^5.0.0"
   },
   "name": "preact-hook-htm",
-  "version": "0.3.0-beta",
+  "version": "0.3.1-beta",
   "main": "dist/preact-hook-htm.cjs.js",
   "module": "dist/preact-hook-htm.esm.js",
   "repository": "https://github.com/lukekaalim/preact-hook-htm.git",
