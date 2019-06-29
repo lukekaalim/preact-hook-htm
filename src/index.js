@@ -5,6 +5,7 @@ import htm from 'htm';
 const html = htm.bind(createElement);
 
 export {
+  createElement,
   html,
   render,
   useState,

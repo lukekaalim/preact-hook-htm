@@ -3,11 +3,24 @@
 declare opaque type PreactElement;
 declare opaque type PreactContext<TContext>;
 
+type vNode =
+  | null
+  | PreactElement
+  | string
+  | Array<vNode>;
+
+type PreactComponent<TProps> = (props: TProps) => PreactElement;
+
 // htm
 declare export function html(Array<string>, ...args: Array<mixed>): PreactElement;
 // preact
-declare export function render<TProps>((props: TProps) => PreactElement | string | Array<PreactElement>): void;
+declare export function render<TProps>(component: PreactComponent<TProps>): void;
 declare export function createContext<TContext>(initalContext?: TContext): PreactContext<TContext>;
+declare export function createElement<TProps>(
+  type: string | PreactComponent<TProps>,
+  props: TProps,
+  ...children: Array<PreactElement>
+): PreactElement;
 
 // preact/hooks
 declare export function useState<TState>(initalState: TState): [TState, (newState: TState) => void];
