@@ -1,0 +1,20 @@
+// @flow
+
+declare opaque type PreactElement;
+declare opaque type PreactContext<TContext>;
+
+// htm
+declare export function html(Array<mixed>): PreactElement;
+// preact
+declare export function render<TProps>((props: TProps) => PreactElement | string | Array<PreactElement>): void;
+declare export function createContext<TContext>(initalContext?: TContext): PreactContext<TContext>;
+
+// preact/hooks
+declare export function useState<TState>(initalState: TState): [TState, (newState: TState) => void];
+declare export function useEffect(effect: () => (void | () => mixed), dependencies: Array<mixed>): void;
+declare export function useReducer<TState, TAction>(
+  reducer: (state: TState, action: TAction) => TState,
+  initialArg?: TState
+): [TState, (action: TAction) => void];
+declare export function useRef<TReference>(initalRef?: TReference): { current: TReference };
+declare export function useContext<TContext>(PreactContext<TContext>): TContext;
