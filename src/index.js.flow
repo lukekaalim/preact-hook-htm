@@ -1,15 +1,15 @@
 // @flow
 
-declare opaque type PreactElement;
-declare opaque type PreactContext<TContext>;
+declare export opaque type PreactElement;
+declare export opaque type PreactContext<TContext>;
 
-type vNode =
+export type vNode =
   | null
   | PreactElement
   | string
   | Array<vNode>;
 
-type PreactComponent<TProps> = (props: TProps) => PreactElement;
+export type PreactComponent<TProps> = (props: TProps) => PreactElement;
 
 // htm
 declare export function html(Array<string>, ...args: Array<mixed>): PreactElement;
