@@ -1,13 +1,12 @@
 // @flow
 
-declare export opaque type PreactElement;
 declare export opaque type PreactContext<TContext>;
 
-export type vNode =
+export type PreactElement =
   | null
   | PreactElement
   | string
-  | Array<vNode>;
+  | Array<PreactElement>;
 
 export type PreactComponent<TProps> = (props: TProps) => PreactElement;
 
